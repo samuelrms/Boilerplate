@@ -1,6 +1,7 @@
 import './main.css'
 import type { Metadata } from 'next'
 import { Ubuntu } from 'next/font/google'
+import Providers from './providers'
 
 const ubuntu = Ubuntu({
   weight: ['300', '400', '500', '700'],
@@ -22,7 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={ubuntu.className}>{children}</body>
+      <body className={ubuntu.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }
