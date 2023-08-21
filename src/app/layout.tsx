@@ -8,7 +8,6 @@ const ubuntu = Ubuntu({
   subsets: ['latin'],
   preload: true,
   style: ['italic', 'normal'],
-  display: 'swap',
 })
 
 export const metadata: Metadata = {
