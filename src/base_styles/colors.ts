@@ -37,6 +37,56 @@ export const colors = {
   borderOpacityDark: 'rgba(209, 213, 219, 0.5)',
   iconOpacityDark: 'rgba(107, 114, 128, 0.5)',
   overlayOpacityLight: 'rgba(31, 41, 55, 0.5)',
+  button: {
+    primary: {
+      filled: {
+        background: '#3B82F6',
+        color: '#FFFFFF',
+        hoverBackground: '#2563EB',
+        hoverColor: '#FFFFFF',
+        activeBackground: '#93C5FD',
+      },
+      outlined: {
+        background: 'transparent',
+        color: '#3B82F6',
+        hoverBackground: '#EFF6FF',
+        hoverColor: '#2563EB',
+        activeBackground: '#DBEAFE',
+      },
+    },
+    secondary: {
+      filled: {
+        background: '#EC4899',
+        color: '#FFFFFF',
+        hoverBackground: '#BE185D',
+        hoverColor: '#FFFFFF',
+        activeBackground: '#F472B6',
+      },
+      outlined: {
+        background: 'transparent',
+        color: '#EC4899',
+        hoverBackground: '#FDF2F8',
+        hoverColor: '#BE185D',
+        activeBackground: '#FCE7F3',
+      },
+    },
+    disabled: {
+      filled: {
+        background: '#9CA3AF',
+        color: '#FFFFFF',
+        hoverBackground: '#9CA3AF',
+        hoverColor: '#FFFFFF',
+        activeBackground: '#9CA3AF',
+      },
+      outlined: {
+        background: 'transparent',
+        color: '#9CA3AF',
+        hoverBackground: '#9CA3AF',
+        hoverColor: '#9CA3AF',
+        activeBackground: '#9CA3AF',
+      },
+    },
+  },
 }
 
 export type Colors = typeof colors
