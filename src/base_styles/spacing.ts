@@ -34,7 +34,6 @@ export const spacing = {
   '80': '20rem',
   '96': '24rem',
 }
-export type Spacing = typeof spacing
 
 export const breakpoints = {
   sm: '576px',
@@ -42,7 +41,6 @@ export const breakpoints = {
   lg: '992px',
   xl: '1200px',
 }
-export type Breakpoints = typeof breakpoints
 
 export const borderWidth = {
   default: '1px',
@@ -52,4 +50,6 @@ export const borderWidth = {
   '8': '8px',
 }
 
+export type Breakpoints = typeof breakpoints
+export type Spacing = typeof spacing
 export type BorderWidth = typeof borderWidth
