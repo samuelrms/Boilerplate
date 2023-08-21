@@ -4,6 +4,7 @@ export type Props = {
   width?: number
   height?: number
   bgColor?: string
-  marginLeft?: number
-  marginBottom?: number
+  ml?: number
+  mb?: number
+  mt?: number
 } & ComponentProps<'hr'>

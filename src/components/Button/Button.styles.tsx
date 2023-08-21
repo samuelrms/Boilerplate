@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+'use client'
+import styled from '@emotion/styled'
 import { Mixin, Props, SizeMixin } from './Button.types'
 import { theme } from '@/base_styles/theme'
 

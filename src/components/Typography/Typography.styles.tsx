@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+'use client'
+import styled from '@emotion/styled'
 import { Mixin, Props } from './Typography.types'
 import { theme } from '@/base_styles/theme'
 
@@ -81,11 +82,7 @@ const styles: Mixin = {
   },
 }
 
-const componentVariantStyle = ({ as }: Props) => as
-
-export const StyledTypography = styled(
-  componentVariantStyle({ as: 'p' }),
-)<Props>`
+export const StyledTypography = styled.p<Props>`
   color: ${({ theme, color }) => color ?? theme.text};
   line-height: auto;
 
@@ -95,6 +92,12 @@ export const StyledTypography = styled(
   `}
 `
 
-export const Typography = ({ children, ...props }: Props) => (
-  <StyledTypography {...props}>{children}</StyledTypography>
+export const Typography = ({
+  as = 'p',
+  children,
+  ...props
+}: Partial<Props>) => (
+  <StyledTypography as={as} {...props}>
+    {children}
+  </StyledTypography>
 )
