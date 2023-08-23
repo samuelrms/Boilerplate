@@ -70,6 +70,6 @@ export const fonts = {
     relaxed: 1.625,
     loose: 2,
   },
-}
+};
 
-export type Fonts = typeof fonts
+export type Fonts = typeof fonts;

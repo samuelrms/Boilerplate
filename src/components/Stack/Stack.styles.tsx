@@ -1,6 +1,6 @@
-'use client'
-import styled from '@emotion/styled'
-import { Props } from './Stack.types'
+'use client';
+import styled from '@emotion/styled';
+import { Props } from './Stack.types';
 
 export const CustomStack = styled.div<Props>`
   display: flex;
@@ -25,6 +25,6 @@ export const CustomStack = styled.div<Props>`
   margin-bottom: ${({ mb }) => mb}rem;
   gap: ${({ gap }) => gap}rem;
   color: ${({ color }) => color};
-`
+`;
 
-export const Stack = ({ ...props }: Props) => <CustomStack {...props} />
+export const Stack = ({ ...props }: Props) => <CustomStack {...props} />;

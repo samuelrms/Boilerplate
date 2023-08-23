@@ -1,6 +1,6 @@
-import { colors } from './colors'
-import { fonts } from './fonts'
-import { borderWidth, breakpoints, spacing } from './spacing'
+import { colors } from './colors';
+import { fonts } from './fonts';
+import { borderWidth, breakpoints, spacing } from './spacing';
 
 export const theme = {
   ...colors,
@@ -8,6 +8,6 @@ export const theme = {
   spacing: { ...spacing },
   ...breakpoints,
   ...borderWidth,
-}
+};
 
-export type Theme = typeof theme
+export type Theme = typeof theme;

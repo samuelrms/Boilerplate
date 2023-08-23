@@ -1,7 +1,7 @@
-'use client'
-import styled from '@emotion/styled'
-import { Mixin, Props, SizeMixin } from './Button.types'
-import { theme } from '@/base_styles/theme'
+'use client';
+import styled from '@emotion/styled';
+import { Mixin, Props, SizeMixin } from './Button.types';
+import { theme } from '@/base_styles/theme';
 
 const styles: Mixin = {
   primary: {
@@ -36,7 +36,7 @@ const styles: Mixin = {
       activeBackground: theme.button.secondary.outlined.activeBackground,
     },
   },
-}
+};
 
 const sizes: SizeMixin = {
   sm: {
@@ -49,7 +49,7 @@ const sizes: SizeMixin = {
     horizontalPadding: theme.spacing[18],
     fontSize: theme.size.xl,
   },
-}
+};
 
 export const StyledButton = styled.button<Props>`
   border-radius: 48px;
@@ -82,8 +82,8 @@ export const StyledButton = styled.button<Props>`
       box-shadow: none;
     }
   `}
-`
+`;
 
 export const Button = ({ children, ...props }: Props) => (
   <StyledButton {...props}>{children}</StyledButton>
-)
+);

@@ -1,7 +1,7 @@
-'use client'
-import styled from '@emotion/styled'
-import { Mixin, Props } from './Typography.types'
-import { theme } from '@/base_styles/theme'
+'use client';
+import styled from '@emotion/styled';
+import { Mixin, Props } from './Typography.types';
+import { theme } from '@/base_styles/theme';
 
 const styles: Mixin = {
   lg: {
@@ -80,7 +80,7 @@ const styles: Mixin = {
       fontWeight: theme.weight.medium,
     },
   },
-}
+};
 
 export const StyledTypography = styled.p<Props>`
   color: ${({ theme, color }) => color ?? theme.text};
@@ -90,7 +90,7 @@ export const StyledTypography = styled.p<Props>`
   font-size: ${styles[size][variant].fontSize};
   font-weight: ${styles[size][variant].fontWeight};
   `}
-`
+`;
 
 export const Typography = ({
   as = 'p',
@@ -100,4 +100,4 @@ export const Typography = ({
   <StyledTypography as={as} {...props}>
     {children}
   </StyledTypography>
-)
+);
