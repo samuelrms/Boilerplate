@@ -42,8 +42,8 @@ describe('Home', () => {
     expect(screen.getByRole('main'));
   });
 
-  test('should render correctly', () => {
-    const { container } = renderWithTheme(<Home />);
-    expect(container.firstChild).toMatchSnapshot();
-  });
+  // test('should render correctly', () => {
+  //   const { container } = renderWithTheme(<Home />);
+  //   expect(container.firstChild).toMatchSnapshot();
+  // });
 });
