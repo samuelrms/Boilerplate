@@ -1,5 +1,5 @@
 import { fireEvent, screen } from '@testing-library/react';
-import { Button } from '.';
+import { Button } from '..';
 import { renderWithTheme } from '@/tests/utils';
 
 describe('Button variants', () => {
@@ -56,5 +56,10 @@ describe('Button variants', () => {
 
     fireEvent.click(buttonElement);
     expect(onClickMock).toHaveBeenCalledTimes(1);
+  });
+
+  test('should render correctly', () => {
+    const { container } = renderWithTheme(<Button />);
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
