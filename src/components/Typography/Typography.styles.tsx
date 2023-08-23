@@ -97,7 +97,7 @@ export const Typography = ({
   children,
   ...props
 }: Partial<Props>) => (
-  <StyledTypography as={as} {...props}>
+  <StyledTypography data-testid="typography" as={as} {...props}>
     {children}
   </StyledTypography>
 );
