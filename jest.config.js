@@ -11,4 +11,6 @@ module.exports = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
+  transformIgnorePatterns: ['/node_modules/', '^.+\\.css$'],
+  coveragePathIgnorePatterns: ['/src/app/layout.tsx'],
 };
