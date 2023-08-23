@@ -1,7 +1,7 @@
-import { Button } from '@/components/Button'
-import { Divider } from '@/components/Divider'
-import { Stack } from '@/components/Stack/Stack.styles'
-import { Typography } from '@/components/Typography'
+import { Button } from '@/components/Button';
+import { Divider } from '@/components/Divider';
+import { Stack } from '@/components/Stack/Stack.styles';
+import { Typography } from '@/components/Typography';
 
 export default function Home() {
   return (
@@ -18,5 +18,5 @@ export default function Home() {
         Stack component
       </Stack>
     </main>
-  )
+  );
 }
