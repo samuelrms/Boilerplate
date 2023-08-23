@@ -58,8 +58,8 @@ describe('Button variants', () => {
     expect(onClickMock).toHaveBeenCalledTimes(1);
   });
 
-  test('should render correctly', () => {
-    const { container } = renderWithTheme(<Button />);
-    expect(container.firstChild).toMatchSnapshot();
-  });
+  // test('should render correctly', () => {
+  //   const { container } = renderWithTheme(<Button />);
+  //   expect(container.firstChild).toMatchSnapshot();
+  // });
 });

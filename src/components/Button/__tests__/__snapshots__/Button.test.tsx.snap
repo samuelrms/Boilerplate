@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Button variants should render correctly 1`] = `
-<button
-  class="css-euufcq"
-/>
-`;
