@@ -10,9 +10,9 @@ export default function Home() {
         Create Next.js apps using TailwindCSS and TypeScript
       </h1>
       <Typography as={'h3'}>Typography component</Typography>
-      <Divider height={3} mb={8} mt={16} />
+      <Divider height={3} mb={1} mt={2} />
       <Button>Button Component Primary</Button>
-      <Divider height={3} mb={8} mt={16} />
+      <Divider height={3} mb={1} mt={2} />
       <Button color="secondary">Button Component Secondary</Button>
       <Stack p={2} bgColor="#e35" m={3} br={1} color="#f6f6f6">
         Stack component
