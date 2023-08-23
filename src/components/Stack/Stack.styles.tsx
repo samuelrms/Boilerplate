@@ -27,4 +27,6 @@ export const CustomStack = styled.div<Props>`
   color: ${({ color }) => color};
 `;
 
-export const Stack = ({ ...props }: Props) => <CustomStack {...props} />;
+export const Stack = ({ ...props }: Props) => (
+  <CustomStack data-testid="stack" {...props} />
+);
