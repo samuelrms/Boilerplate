@@ -58,8 +58,8 @@ describe('Divider', () => {
     expect(divider).toHaveStyle({ backgroundColor: 'red' });
   });
 
-  // test('should render correctly', () => {
-  //   const { container } = renderWithTheme(<Divider />);
-  //   expect(container.firstChild).toMatchSnapshot();
-  // });
+  test('should render correctly', () => {
+    const { container } = renderWithTheme(<Divider />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

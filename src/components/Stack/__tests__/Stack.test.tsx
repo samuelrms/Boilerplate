@@ -118,8 +118,8 @@ describe('Stack', () => {
     expect(stack).toHaveStyle({ color: 'red' });
   });
 
-  // test('should render correctly', () => {
-  //   const { container } = renderWithTheme(<Stack />);
-  //   expect(container.firstChild).toMatchSnapshot();
-  // });
+  test('should render correctly', () => {
+    const { container } = renderWithTheme(<Stack />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

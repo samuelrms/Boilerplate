@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stack should render correctly 1`] = `
+<div
+  class="css-1eb69g2"
+  data-testid="stack"
+/>
+`;

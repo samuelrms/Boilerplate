@@ -40,8 +40,8 @@ describe('Typography', () => {
     expect(typography).toHaveStyle({ fontSize: '0.875rem' });
   });
 
-  // test('should render correctly', () => {
-  //   const { container } = renderWithTheme(<Typography></>);
-  //   expect(container.firstChild).toMatchSnapshot();
-  // });
+  test('should render correctly', () => {
+    const { container } = renderWithTheme(<Typography>Typography</Typography>);
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

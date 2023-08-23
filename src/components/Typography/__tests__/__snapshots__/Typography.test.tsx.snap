@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography should render correctly 1`] = `
+<p
+  class="css-1ndg5q"
+  data-testid="typography"
+>
+  Typography
+</p>
+`;
