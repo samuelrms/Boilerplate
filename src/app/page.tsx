@@ -1,5 +1,6 @@
 import { Button } from '@/components/Button'
 import { Divider } from '@/components/Divider'
+import { Stack } from '@/components/Stack/Stack.styles'
 import { Typography } from '@/components/Typography'
 
 export default function Home() {
@@ -13,6 +14,9 @@ export default function Home() {
       <Button>Button Component Primary</Button>
       <Divider height={3} mb={8} mt={16} />
       <Button color="secondary">Button Component Secondary</Button>
+      <Stack p={2} bgColor="#e35" m={3} br={1} color="#f6f6f6">
+        Stack component
+      </Stack>
     </main>
   )
 }
