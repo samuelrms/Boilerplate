@@ -44,7 +44,6 @@
     "@testing-library/jest-dom": "^6.1.1",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.4",
-    "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
     "add": "^2.0.6",
