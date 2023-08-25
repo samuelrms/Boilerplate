@@ -1,11 +1,13 @@
 import { Button } from '@/components/Button';
 import { Divider } from '@/components/Divider';
+import NavBar from '@/components/NavBar';
 import { Stack } from '@/components/Stack/Stack.styles';
 import { Typography } from '@/components/Typography';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center p-24 flex-col">
+    <main className="flex min-h-screen items-center justify-start p-24 pt-0 flex-col h-[200vh]">
+      <NavBar shouldHideOnScroll>Seu conteúdo de NavBar aqui</NavBar>
       <h1 className="text-4xl break-words text-center">
         Create Next.js apps using TailwindCSS and TypeScript
       </h1>
