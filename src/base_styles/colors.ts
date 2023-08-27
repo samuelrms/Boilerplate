@@ -37,6 +37,7 @@ export const colors = {
   borderOpacityDark: 'rgba(209, 213, 219, 0.5)',
   iconOpacityDark: 'rgba(107, 114, 128, 0.5)',
   overlayOpacityLight: 'rgba(31, 41, 55, 0.5)',
+  navBar: '#f6f6f6',
   button: {
     primary: {
       filled: {

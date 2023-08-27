@@ -3,11 +3,11 @@ import { fonts } from './fonts';
 import { borderWidth, breakpoints, spacing } from './spacing';
 
 export const theme = {
-  ...colors,
-  ...fonts,
+  colors: { ...colors },
+  fonts: { ...fonts },
   spacing: { ...spacing },
-  ...breakpoints,
-  ...borderWidth,
+  breakpoints: { ...breakpoints },
+  borderWidth: { ...borderWidth },
 };
 
 export type Theme = typeof theme;
