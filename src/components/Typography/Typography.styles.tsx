@@ -6,84 +6,84 @@ import { theme } from '@/base_styles/theme';
 const styles: Mixin = {
   lg: {
     xlg: {
-      fontSize: theme.size['6.5xl'],
-      fontWeight: theme.weight.medium,
+      fontSize: theme.fonts.size['6.5xl'],
+      fontWeight: theme.fonts.weight.medium,
     },
     lg: {
-      fontSize: theme.size['6xl'],
-      fontWeight: theme.weight.medium,
+      fontSize: theme.fonts.size['6xl'],
+      fontWeight: theme.fonts.weight.medium,
     },
     md: {
-      fontSize: theme.size['4.25xl'],
-      fontWeight: theme.weight.medium,
+      fontSize: theme.fonts.size['4.25xl'],
+      fontWeight: theme.fonts.weight.medium,
     },
     sm: {
-      fontSize: theme.size['4xl'],
-      fontWeight: theme.weight.bold,
+      fontSize: theme.fonts.size['4xl'],
+      fontWeight: theme.fonts.weight.bold,
     },
     heading: {
-      fontSize: theme.size['3.5xl'],
-      fontWeight: theme.weight.regular,
+      fontSize: theme.fonts.size['3.5xl'],
+      fontWeight: theme.fonts.weight.regular,
     },
     subheading: {
-      fontSize: theme.size['2xl'],
-      fontWeight: theme.weight.regular,
+      fontSize: theme.fonts.size['2xl'],
+      fontWeight: theme.fonts.weight.regular,
     },
     body: {
-      fontSize: theme.size['lg'],
-      fontWeight: theme.weight.regular,
+      fontSize: theme.fonts.size['lg'],
+      fontWeight: theme.fonts.weight.regular,
     },
     subtitle: {
-      fontSize: theme.size['md'],
-      fontWeight: theme.weight.regular,
+      fontSize: theme.fonts.size['md'],
+      fontWeight: theme.fonts.weight.regular,
     },
     caption: {
-      fontSize: theme.size['xs'],
-      fontWeight: theme.weight.regular,
+      fontSize: theme.fonts.size['xs'],
+      fontWeight: theme.fonts.weight.regular,
     },
   },
   sm: {
     xlg: {
-      fontSize: theme.size['3.5xl'],
-      fontWeight: theme.weight.medium,
+      fontSize: theme.fonts.size['3.5xl'],
+      fontWeight: theme.fonts.weight.medium,
     },
     lg: {
-      fontSize: theme.size['2xl'],
-      fontWeight: theme.weight.medium,
+      fontSize: theme.fonts.size['2xl'],
+      fontWeight: theme.fonts.weight.medium,
     },
     md: {
-      fontSize: theme.size['xl'],
-      fontWeight: theme.weight.medium,
+      fontSize: theme.fonts.size['xl'],
+      fontWeight: theme.fonts.weight.medium,
     },
     sm: {
-      fontSize: theme.size.base,
-      fontWeight: theme.weight.bold,
+      fontSize: theme.fonts.size.base,
+      fontWeight: theme.fonts.weight.bold,
     },
     heading: {
-      fontSize: theme.size['lg'],
-      fontWeight: theme.weight.regular,
+      fontSize: theme.fonts.size['lg'],
+      fontWeight: theme.fonts.weight.regular,
     },
     subheading: {
-      fontSize: theme.size['md'],
-      fontWeight: theme.weight.regular,
+      fontSize: theme.fonts.size['md'],
+      fontWeight: theme.fonts.weight.regular,
     },
     body: {
-      fontSize: theme.size['sm'],
-      fontWeight: theme.weight.regular,
+      fontSize: theme.fonts.size['sm'],
+      fontWeight: theme.fonts.weight.regular,
     },
     subtitle: {
-      fontSize: theme.size['md'],
-      fontWeight: theme.weight.regular,
+      fontSize: theme.fonts.size['md'],
+      fontWeight: theme.fonts.weight.regular,
     },
     caption: {
-      fontSize: theme.size['sm'],
-      fontWeight: theme.weight.medium,
+      fontSize: theme.fonts.size['sm'],
+      fontWeight: theme.fonts.weight.medium,
     },
   },
 };
 
 export const StyledTypography = styled.p<Props>`
-  color: ${({ theme, color }) => color ?? theme.text};
+  color: ${({ theme, color }) => color ?? theme.colors.text};
   line-height: auto;
 
   ${({ size = 'lg', variant = 'body' }: Props) => `
