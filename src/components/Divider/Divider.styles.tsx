@@ -6,7 +6,7 @@ import { Props } from './Divider.types';
 export const CustomDivider = styled.hr<Props>`
   width: ${({ width }) => `${width ? width + 'px' : '100%'}`};
   height: ${({ height }) => height}px;
-  background-color: ${({ bgColor, theme }) => bgColor ?? theme.divider};
+  background-color: ${({ bgColor, theme }) => bgColor ?? theme.colors.divider};
   margin: ${({ m }) => m}rem;
   margin-left: ${({ ml }) => ml}rem;
   margin-right: ${({ mr }) => mr}rem;

@@ -6,34 +6,34 @@ import { theme } from '@/base_styles/theme';
 const styles: Mixin = {
   primary: {
     filled: {
-      background: theme.button.primary.filled.background,
-      color: theme.button.primary.filled.color,
-      hoverBackground: theme.button.primary.filled.hoverBackground,
-      hoverColor: theme.button.primary.filled.hoverColor,
-      activeBackground: theme.button.primary.filled.activeBackground,
+      background: theme.colors.button.primary.filled.background,
+      color: theme.colors.button.primary.filled.color,
+      hoverBackground: theme.colors.button.primary.filled.hoverBackground,
+      hoverColor: theme.colors.button.primary.filled.hoverColor,
+      activeBackground: theme.colors.button.primary.filled.activeBackground,
     },
     outlined: {
-      background: theme.button.primary.outlined.background,
-      color: theme.button.primary.outlined.color,
-      hoverBackground: theme.button.primary.outlined.hoverBackground,
-      hoverColor: theme.button.primary.outlined.hoverColor,
-      activeBackground: theme.button.primary.outlined.activeBackground,
+      background: theme.colors.button.primary.outlined.background,
+      color: theme.colors.button.primary.outlined.color,
+      hoverBackground: theme.colors.button.primary.outlined.hoverBackground,
+      hoverColor: theme.colors.button.primary.outlined.hoverColor,
+      activeBackground: theme.colors.button.primary.outlined.activeBackground,
     },
   },
   secondary: {
     filled: {
-      background: theme.button.secondary.filled.background,
-      color: theme.button.secondary.filled.color,
-      hoverBackground: theme.button.secondary.filled.hoverBackground,
-      hoverColor: theme.button.secondary.filled.hoverColor,
-      activeBackground: theme.button.secondary.filled.activeBackground,
+      background: theme.colors.button.secondary.filled.background,
+      color: theme.colors.button.secondary.filled.color,
+      hoverBackground: theme.colors.button.secondary.filled.hoverBackground,
+      hoverColor: theme.colors.button.secondary.filled.hoverColor,
+      activeBackground: theme.colors.button.secondary.filled.activeBackground,
     },
     outlined: {
-      background: theme.button.secondary.outlined.background,
-      color: theme.button.secondary.outlined.color,
-      hoverBackground: theme.button.secondary.outlined.hoverBackground,
-      hoverColor: theme.button.secondary.outlined.hoverColor,
-      activeBackground: theme.button.secondary.outlined.activeBackground,
+      background: theme.colors.button.secondary.outlined.background,
+      color: theme.colors.button.secondary.outlined.color,
+      hoverBackground: theme.colors.button.secondary.outlined.hoverBackground,
+      hoverColor: theme.colors.button.secondary.outlined.hoverColor,
+      activeBackground: theme.colors.button.secondary.outlined.activeBackground,
     },
   },
 };
@@ -42,12 +42,12 @@ const sizes: SizeMixin = {
   sm: {
     verticalPadding: theme.spacing[3],
     horizontalPadding: theme.spacing[11],
-    fontSize: theme.size.base,
+    fontSize: theme.fonts.size.base,
   },
   md: {
     verticalPadding: theme.spacing[4],
     horizontalPadding: theme.spacing[18],
-    fontSize: theme.size.xl,
+    fontSize: theme.fonts.size.xl,
   },
 };
 
