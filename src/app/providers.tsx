@@ -7,6 +7,8 @@ import { useState } from 'react';
 import createCache from '@emotion/cache';
 import { useServerInsertedHTML } from 'next/navigation';
 import { resetCss } from '@/base_styles/resetCss';
+import { Provider } from 'react-redux';
+import { store } from '@/redux';
 
 const Providers = ({ children }: Children) => {
   const [cache] = useState(() => {
@@ -27,12 +29,14 @@ const Providers = ({ children }: Children) => {
   });
 
   return (
-    <CacheProvider value={cache}>
-      <ThemeProvider theme={theme}>
-        <Global styles={resetCss} />
-        {children}
-      </ThemeProvider>
-    </CacheProvider>
+    <Provider store={store}>
+      <CacheProvider value={cache}>
+        <ThemeProvider theme={theme}>
+          <Global styles={resetCss} />
+          {children}
+        </ThemeProvider>
+      </CacheProvider>
+    </Provider>
   );
 };
 

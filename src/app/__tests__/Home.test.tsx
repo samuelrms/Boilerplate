@@ -1,5 +1,5 @@
 import { renderWithTheme } from '@/tests/utils';
-import { screen } from '@testing-library/react';
+import { fireEvent, screen } from '@testing-library/react';
 import Home from '../page';
 
 describe('Home', () => {
@@ -34,7 +34,12 @@ describe('Home', () => {
 
   test('should render the Divider component', () => {
     renderWithTheme(<Home />);
-    expect(screen.getAllByRole('separator').length).toBe(2);
+    expect(screen.getAllByRole('separator').length).toBe(3);
+  });
+
+  test('should render the Button component', () => {
+    renderWithTheme(<Home />);
+    expect(screen.getAllByRole('button').length).toBe(5);
   });
 
   test('should render the main tag', () => {
@@ -42,8 +47,43 @@ describe('Home', () => {
     expect(screen.getByRole('main'));
   });
 
-  // test('should render correctly', () => {
-  //   const { container } = renderWithTheme(<Home />);
-  //   expect(container.firstChild).toMatchSnapshot();
-  // });
+  test('should render the NavBar component', () => {
+    renderWithTheme(<Home />);
+    expect(screen.getByRole('navigation'));
+  });
+
+  test('should render the Stack component', () => {
+    renderWithTheme(<Home />);
+    expect(screen.getByText(/Contador/i));
+  });
+
+  test('should render the Stack component with children', () => {
+    renderWithTheme(<Home />);
+    expect(screen.getByText(/Soma/i));
+  });
+
+  test('should render the Stack component with children', () => {
+    renderWithTheme(<Home />);
+    expect(screen.getByText(/Zerar/i));
+  });
+
+  test('should render the Stack component with children', () => {
+    renderWithTheme(<Home />);
+    expect(screen.getByText(/Subtrair/i));
+  });
+
+  it('should render correctly and interact with the buttons', () => {
+    const { getByText } = renderWithTheme(<Home />);
+
+    expect(getByText('Contador: 0')).toBeInTheDocument();
+
+    fireEvent.click(getByText('Soma'));
+    expect(getByText('Contador: 1')).toBeInTheDocument();
+
+    fireEvent.click(getByText('Zerar'));
+    expect(getByText('Contador: 0')).toBeInTheDocument();
+
+    fireEvent.click(getByText('Subtrair'));
+    expect(getByText('Contador: -1')).toBeInTheDocument();
+  });
 });
