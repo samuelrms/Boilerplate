@@ -109,3 +109,5 @@ yarn commit
 ├── coverage
 ├── cypress
 │   ├── fixtures -->
+
+![image](https://github.com/samuelrms/Boilerplate/assets/92615688/38226d73-e291-47ca-b239-29da4b63501a)
